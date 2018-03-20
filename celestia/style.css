@@ -14,13 +14,6 @@ This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
 */
 
-.list-unstyled a{
-	text-decoration: none;
-}
-.list-unstyled li{
-	list-style-type: none;
-}
-
 
 ::-webkit-scrollbar-track
 {
@@ -38,6 +31,15 @@ Use it to make something cool, have fun, and share what you've learned with othe
 {
 	background-color: #000000;
 }
+
+
+.list-unstyled a{
+	text-decoration: none;
+}
+.list-unstyled li{
+	list-style-type: none;
+}
+
 .blog-post-title{
 	color: #000;
 }
@@ -213,6 +215,11 @@ body {
 	height: 100%;
 }
 
+h1, h2, h3, h4, h5, h6{
+	font-family: 'Merienda One', cursive;
+}
+
+
 .navbar{
 	background: #212121;
 	padding: 50px;
@@ -221,7 +228,6 @@ body {
 
 }
 
-/* change the background color */
 .navbar-custom {
 	background-color: #212121;
 	position: fixed;
@@ -232,7 +238,6 @@ body {
 	text-align: center;
 }
 
-/* change the brand and text color */
 .navbar-custom .navbar-brand,
 .navbar-custom .navbar-text {
 	color: rgb(255,255,0);
@@ -244,7 +249,6 @@ body {
 
 }
 
-/* change the color of active or hovered links */
 .navbar-custom .nav-item.active .nav-link,
 .navbar-custom .nav-item:hover .nav-link {
 	background: yellow;
@@ -280,21 +284,14 @@ body {
 	margin-bottom: 20px;
 }
 
-
-
 footer{
 	background: #000;
 	height: 10%;
 	text-align: center;
 }
-
-
-body {
-	font-family: 'Raleway', sans-serif;
-	overflow-x: hidden;
-	height: 100%;
+.spacer{
+	height: 210px;
 }
-
 
 #social{
 	background: #212121;
@@ -302,20 +299,23 @@ body {
 
 }
 img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-    margin-left: auto;
-    margin-right: auto;
-
-
+	max-width: 100%;
+	height: auto;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .wp-post-image{
 	margin-bottom: 20px;
 }
+
 .blog-sidebar{
 	margin-top: 145px;
+}
+
+.blog-post{
+	margin-bottom: 20px;
 }
 .footer-links a{
 	color: white;
@@ -329,44 +329,38 @@ img {
 }
 
 
-
-i .fa{
-	margin-right: 100px;
-}
-
-/* CSS Test begin */
 .comment-box {
-    //margin-top: 30px !important;
+	//margin-top: 30px !important;
 }
 
 .comment-box .media-left {
-    padding-right: 10px;
-    width: 65px;
+	padding-right: 10px;
+	width: 65px;
 }
 .comment-box .media-body p {
-    border: 1px solid #ddd;
-    padding: 10px;
+	border: 1px solid #ddd;
+	padding: 10px;
 }
 .comment-box .media-body .media p {
-    margin-bottom: 0;
+	margin-bottom: 0;
 }
 .comment-box .media-heading {
-    background-color: #f5f5f5;
-    border: 1px solid #ddd;
-    padding: 7px 10px;
-    position: relative;
-    margin-bottom: -1px;
+	background-color: #f5f5f5;
+	border: 1px solid #ddd;
+	padding: 7px 10px;
+	position: relative;
+	margin-bottom: -1px;
 }
 .comment-box .media-heading:before {
-    content: "";
-    width: 12px;
-    height: 12px;
-    background-color: #f5f5f5;
-    border: 1px solid #ddd;
-    border-width: 1px 0 0 1px;
-    -webkit-transform: rotate(-45deg);
-    transform: rotate(-45deg);
-    position: absolute;
-    top: 10px;
-    left: -6px;
+	content: "";
+	width: 12px;
+	height: 12px;
+	background-color: #f5f5f5;
+	border: 1px solid #ddd;
+	border-width: 1px 0 0 1px;
+	-webkit-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+	position: absolute;
+	top: 10px;
+	left: -6px;
 }

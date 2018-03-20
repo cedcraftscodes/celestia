@@ -5,6 +5,5 @@
           		<input type="submit" id="searchsubmit" class="btn btn-warning" value="Search" />
           	</form>
           	<?php dynamic_sidebar('right-sidebar'); ?>
-
-
+                  <div class="spacer"></div>
           </aside><!-- /.blog-sidebar -->

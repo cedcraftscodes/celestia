@@ -12,7 +12,7 @@
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Merienda+One" rel="stylesheet">
-
+<script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
   <!-- Custom Css -->
   <link rel="stylesheet" type="text/css" href="<?php bloginfo('stylesheet_url'); ?>">
   <link rel="stylesheet" type="text/css" href="resources/css/social.css">
@@ -28,7 +28,4 @@
   </nav>
   <section id="content">
     <div class="container">
-      <main role="main" class="container">
-        <div class="row">
-          <div class="col-md-8 blog-main">
 
