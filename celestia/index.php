@@ -5,7 +5,7 @@
       <?php $featured_img_url = get_the_post_thumbnail_url(get_the_ID(),'full'); ?>
       <div class="container">
          <div class="row align-items-center">
-            <div class="col-12 col-md-6"><img width="100%" alt="<?php the_title();?>" src="<?php echo $featured_img_url; ?>" sizes="(max-width: 660px) 100vw, 660px"></div>
+            <div class="col-12 col-md-6"><a href="<?php the_permalink(); ?>"><img width="100%" alt="<?php the_title();?>" src="<?php echo $featured_img_url; ?>" sizes="(max-width: 660px) 100vw, 660px"></a></div>
             <div class="col-12 col-md-6">
                <h1><a class="blog-post-title" href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
                <div id="share">

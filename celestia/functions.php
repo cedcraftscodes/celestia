@@ -1,17 +1,6 @@
 <?php 
-
 add_theme_support('post-thumbnails');
 add_theme_support('menus');
-
-
-
-?>
-
-<?php 
-/**
- * Creates a sidebar
- * @param string|array  Builds Sidebar based off of 'name' and 'id' values.
- */
 $args = array(
 	'name'          => __( 'Right Sidebar', 'text-domain' ),
 	'id'            => 'right-sidebar',
@@ -24,5 +13,4 @@ $args = array(
 );
 
 register_sidebar( $args );
-
 ?>

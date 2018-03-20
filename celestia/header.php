@@ -15,8 +15,7 @@
 
   <!-- Custom Css -->
   <link rel="stylesheet" type="text/css" href="<?php bloginfo('stylesheet_url'); ?>">
-  <link rel="stylesheet" type="text/css" href="resources/css/social.css">
-  <link rel="stylesheet" type="text/css" href="resources/css/scrollbar.css">
+
   <title><?php bloginfo('title'); ?></title>
   <?php wp_head(); ?>
 </head>
