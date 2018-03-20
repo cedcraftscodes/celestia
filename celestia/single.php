@@ -57,14 +57,22 @@
               'comment_field' => '<p class="comment-form-comment"><label for="comment">' . _x( 'Comment', 'noun' ) . '</label> <textarea class="form-control" id="comment" name="comment" cols="45" rows="8" maxlength="65525" aria-required="true" required="required"></textarea></p>'
             );
             comment_form($args); ?>
-         <h3 class="merienda">Read Comments!</h3>
+         
          <?php 
             $args = array(
                'number'=>20,
                'offset'=>0,
                'status'=>'approve',
+               'post_id' => get_the_ID()
             );
-            foreach (get_comments($args) as $comment) { ?>
+            $comments = get_comments($args);
+
+            if(count($comments) > 0){
+               echo "<h3>Read Comments!</h3>";
+            }else{
+               echo "<h3>No Comments.</h3>";
+            }
+            foreach ($comments as $comment) { ?>
          <div class="media comment-box">
             <div class="media-body">
                <h5 class="media-heading"><?php echo ucfirst($comment->comment_author); ?> </h5>
